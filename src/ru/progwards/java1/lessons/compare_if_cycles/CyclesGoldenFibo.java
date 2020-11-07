@@ -24,8 +24,6 @@ public class CyclesGoldenFibo {
         }
         return n2;
     }
-    public static boolean isGoldenTriangle(int a, int b, int c) {
-    }
     public static void main(String[] args) {
         int x = 2567584;
         int y = 9;
