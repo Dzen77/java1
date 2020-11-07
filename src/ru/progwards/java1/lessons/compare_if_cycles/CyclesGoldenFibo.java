@@ -10,9 +10,17 @@ public class CyclesGoldenFibo {
             }
         } return false;
         }
+    public static int fiboNumber(int n) {
+
+    }
+    public static boolean isGoldenTriangle(int a, int b, int c) {
+
+    }
     public static void main(String[] args) {
         int x = 2567584;
         int y = 9;
+        int f = 5;
         System.out.println("В заданном числе - " + x + " есть цифра " + y + " это: " + containsDigit(x, y));
+        System.out.println("Элемент под порядковым номером № " + f + " соответствует числу Фибоначи - " + fiboNumber(f));
     }
 }
