@@ -24,6 +24,18 @@ public class CyclesGoldenFibo {
         }
         return n2;
     }
+    public static boolean isGoldenTriangle(int a, int b, int c) {
+        if (a == b || a == c || b == c) {
+            if (a - b == 0) {
+                double z = a/c;
+            } if (a - c == 0) {
+                double z = a/b;
+                } else {
+                double z = a/b;
+            }
+        }
+        return true;
+    }
     public static void main(String[] args) {
         int x = 2567584;
         int y = 9;
