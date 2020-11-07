@@ -2,14 +2,14 @@ package ru.progwards.java1.lessons.compare_if_cycles;
 
 public class CyclesGoldenFibo {
     public static boolean containsDigit(int number, int digit) {
-        while (number > 0) {
+        while (number >= 0) {
             if (number % 10 == digit) {
                 return true;
             } else {
                 number = number/10;
             }
         } return false;
-        }
+    }
     public static int fiboNumber(int n) {
         if (n == 1 || n == 2) {
             return 1;
@@ -37,9 +37,9 @@ public class CyclesGoldenFibo {
         return true;
     }
     public static void main(String[] args) {
-        int x = 24586;
+        int x = 0;
         int y = 0;
-        System.out.println("В заданном числе - " + x + " есть цифра " + y + " это: " + containsDigit(x, y));
+        System.out.println("В  заданном числе - " + x + " есть цифра " + y + " это: " + containsDigit(x, y));
         int f = 5;
         System.out.println("Элемент под порядковым номером № " + f + " соответствует числу Фибоначи - " + fiboNumber(f));
         int n = 4;
