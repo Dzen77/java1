@@ -14,7 +14,7 @@ public class TriangleInfo {
         return result2;
     }
     public static void main(String[] args) {
-        int a = 3;
+        int a = 4;
         int b = 3;
         int c = 3;
         System.out.println("По данным параматрам длин сторон можно построить треугольник - " + isTriangle(a, b, c));
