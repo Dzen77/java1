@@ -28,24 +28,32 @@ public class CyclesGoldenFibo {
         return n2;
     }
     public static boolean isGoldenTriangle(int a, int b, int c) {
+        double z = 1;
         if (a == b || a == c || b == c) {
             if (a - b == 0) {
-                double z = a/c;
+                double a1 = a;
+                z = a1/c;
             } if (a - c == 0) {
-                double z = a/b;
-                } else {
-                double z = a/b;
+                double b1 = b;
+                z = a/b1;
+                } if (b - c == 0) {
+                double b1 = b;
+                z = b1 / a;
+                } if (1.617_03 < z && z < 1.619_03) {
+                return true;
             }
-        }
-        return true;
+            }
+        return false;
     }
     public static void main(String[] args) {
         int x = 0;
         int y = 1;
         System.out.println("В заданном числе - " + x + " есть цифра " + y + "  это: " + containsDigit(x, y));
-        int f = 5;
+        int f = 7;
         System.out.println("Элемент под порядковым номером № " + f + " соответствует числу Фибоначи - " + fiboNumber(f));
-        int n = 4;
-        System.out.println(fiboNumber(n));
+        int a = 34;
+        int b = 34;
+        int c = 55;
+        System.out.println(isGoldenTriangle(a, b, c));
     }
 }
