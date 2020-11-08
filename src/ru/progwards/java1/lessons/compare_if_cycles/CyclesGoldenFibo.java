@@ -42,7 +42,7 @@ public class CyclesGoldenFibo {
     public static void main(String[] args) {
         int x = 0;
         int y = 0;
-        System.out.println("В  заданном числе - " + x + " есть цифра " + y + " это: " + containsDigit(x, y));
+        System.out.println("В заданном числе - " + x + " есть цифра " + y + " это: " + containsDigit(x, y));
         int f = 5;
         System.out.println("Элемент под порядковым номером № " + f + " соответствует числу Фибоначи - " + fiboNumber(f));
         int n = 4;
