@@ -9,4 +9,4 @@ public class Duck extends Animal {
         public FoodKind getFoodKind() {
             return FoodKind.CORN;
         }
-    }
+}
