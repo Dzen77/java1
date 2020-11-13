@@ -4,11 +4,11 @@ public class Cow extends Animal {
     @Override
     public AnimalKind getKind() {
         AnimalKind ani = AnimalKind.COW;
-        return AnimalKind.COW;
+        return ani;
     }
     @Override
     public FoodKind getFoodKind() {
         FoodKind food = FoodKind.HAY;
-        return FoodKind.HAY;
+        return food;
     }
 }

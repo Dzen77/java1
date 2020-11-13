@@ -7,11 +7,11 @@ public class Animal {
     }
     public AnimalKind getKind() {
         AnimalKind ani = AnimalKind.ANIMAL;
-        return AnimalKind.ANIMAL;
+        return ani;
     }
     public FoodKind getFoodKind() {
         FoodKind food = FoodKind.UNKNOWN;
-        return FoodKind.UNKNOWN;
+        return food;
     }
     public String toString(){
         return "i am <AnimalKind>" + ", " + "eat <FoodKind>";
