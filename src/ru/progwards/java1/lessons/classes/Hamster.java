@@ -5,7 +5,6 @@ public class Hamster extends Animal {
         public AnimalKind getKind() {
             return AnimalKind.HAMSTER;
         }
-
         @Override
         public FoodKind getFoodKind() {
             return FoodKind.CORN;
