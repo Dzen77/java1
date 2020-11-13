@@ -1,7 +1,6 @@
 package ru.progwards.java1.lessons.classes;
 
-public class Duck {
-    public class Hamster extends Animal {
+public class Duck extends Animal {
         @Override
         public AnimalKind getKind() {
             return AnimalKind.DUCK;
@@ -11,4 +10,3 @@ public class Duck {
             return FoodKind.CORN;
         }
     }
-}
