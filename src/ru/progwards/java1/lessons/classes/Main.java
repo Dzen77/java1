@@ -13,7 +13,8 @@ public class Main {
         CORN,
     }
     public static void main(String[] args) {
-        System.out.println(AnimalKind.ANIMAL);
-        System.out.println(FoodKind.UNKNOWN);
-        }
+        Cow cou = new Cow();
+        Hamster ham = new Hamster();
+        Duck duck = new Duck();
+    }
 }

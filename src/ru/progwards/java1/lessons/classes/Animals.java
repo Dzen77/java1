@@ -6,5 +6,7 @@ public class Animals {
     }
     public static void main(String[] args) {
         Cow x = new Cow();
+        Hamster y = new Hamster();
+        Duck z = new Duck();
     }
 }
