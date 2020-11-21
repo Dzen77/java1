@@ -1,29 +1,30 @@
 package ru.progwards.java1.lessons.classes;
 
-class Animal {
-    double weight;
-    Animal() {
+public class Animal {
+    public Animal() {
     }
     public Animal(double weight) {
     }
-    public double getWeight() {
-        return weight;
+    public AnimalKind getKind () {
+        AnimalKind animal1 = AnimalKind.ANIMAL;
+        return animal1;
     }
-    public double getFoodCoeff() {
-        return 0.02;
+    public FoodKind getFoodKind () {
+        FoodKind food1 = FoodKind.UNKNOWN;
+        return food1;
     }
-    public AnimalKind getKind() {
-        AnimalKind ani = AnimalKind.ANIMAL;
-        return ani;
+    @Override
+    public String toString () {
+        return "i am " + getKind() + ", " + "eat " + getFoodKind();
     }
-    public FoodKind getFoodKind() {
-        FoodKind food = FoodKind.UNKNOWN;
-        return food;
-    }
-    public String toString(){
-        return "i am <AnimalKind>" + ", " + "eat <FoodKind>";
-    }
-    public String toStringFull() {
-        return "i am <AnimalKind>" + ", " + "eat <FoodKind>" + ", " + "<CalculateFoodWeight>";
+    public static void main (String[]args){
+        Animal ani = new Animal(3.5);
+        Animal ani2 = new Cow();
+        Animal ani3 = new Hamster();
+        Animal ani4 = new Duck();
+        System.out.println(ani);
+        System.out.println(ani2);
+        System.out.println(ani3);
+        System.out.println(ani4);
     }
 }

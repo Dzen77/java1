@@ -1,14 +1,14 @@
 package ru.progwards.java1.lessons.classes;
 
-class Cow extends Animal {
+public class Cow extends Animal {
     @Override
     public AnimalKind getKind() {
-        AnimalKind ani = AnimalKind.COW;
-        return ani;
+        AnimalKind animal2 = AnimalKind.COW;
+        return animal2;
     }
     @Override
     public FoodKind getFoodKind() {
-        FoodKind food = FoodKind.HAY;
-        return food;
+        FoodKind food2 = FoodKind.HAY;
+        return food2;
     }
 }
