@@ -1,6 +1,8 @@
 package ru.progwards.java1.lessons.classes;
 
 public class Duck extends Animal {
+    public Duck() {
+    }
     @Override
     public AnimalKind getKind() {
         AnimalKind animal4 = AnimalKind.DUCK;
