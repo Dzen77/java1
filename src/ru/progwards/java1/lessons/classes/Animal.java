@@ -6,7 +6,7 @@ public class Animal {
     public Animal(double weight) {//конструктор сохраняет вес животного
     }
     public double getWeight() { //метод возвращает вес животного
-        return 0d;//вес абстрактного животного
+        return 3.4d;//вес абстрактного животного
     }
     public double getFoodCoeff() {
         return 0.02d;//который возвращает коэффициент веса еды к весу тела животного для класса Animal это 0.02
