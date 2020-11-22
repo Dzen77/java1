@@ -20,10 +20,10 @@ public class Animal {
         return FoodKind.UNKNOWN;
     }
     public String toString () {
-        return "i am " + getKind() + ", " + "eat " + getFoodKind();
+        return "I am " + getKind() + ", " + "eat " + getFoodKind();
     }
     public String toStringFull () {
-        return "i am " + getKind() + ", " + "eat " + getFoodKind() + " " + calculateFoodWeight();
+        return "I am " + getKind() + ", " + "eat " + getFoodKind() + " " + calculateFoodWeight();
     }
     public static void main (String[]args){
         Animal ani = new Animal(5.4);
