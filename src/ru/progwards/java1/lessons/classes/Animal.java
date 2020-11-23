@@ -1,10 +1,12 @@
 package ru.progwards.java1.lessons.classes;
 
 public class Animal {
+    double weight;
     public Animal(double weight) {//конструктор сохраняет вес животного
+        this.weight = weight;
     }
     public double getWeight() { //метод возвращает вес животного
-        return 1.0;//вес абстрактного животного
+        return this.weight;//вес абстрактного животного
     }
     public double getFoodCoeff() {
         return 0.02d;//который возвращает коэффициент веса еды к весу тела животного для класса Animal это 0.02
