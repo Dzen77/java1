@@ -1,15 +1,9 @@
 package ru.progwards.java1.lessons.classes;
 
 public class ComplexNum {
-    double x;
-    double y;
-    public ComplexNum(double a, double b) {
-        x = a;
-        y = b;
-    }
     public String toString() {
-        String a = Double.toString(x);
-        String b = Double.toString(y);
+        String a = Double.toString(this.real);
+        String b = Double.toString(this.mnim);
         return a + "+" + b + "i";
     }
     int real, mnim; //объявление действительной и мнимой переменных
@@ -25,8 +19,33 @@ public class ComplexNum {
         temp.mnim = C1.mnim + C2.mnim;//добавление мнимой части
         return temp;//возвращаем сумму
     }
+    ComplexNum sub(ComplexNum C1, ComplexNum C2) {//Метод для вычитания двух комплексных чисел
+        ComplexNum temp = new ComplexNum(); //Создаем временную ипеременную
+        temp.real = C1.real - C2.real;//добавление действительной части
+        temp.mnim = C1.mnim - C2.mnim;//добавление мнимой части
+        return temp;//возвращаем разницу
+    }
+    void printComplexNumber() {//Функция для печати комлексного номера
+        System.out.println(real + "+" + mnim + "i");
+    }
     public static void main(String[] args) {
-        ComplexNum Comp = new ComplexNum(7d,12d);
+        ComplexNum Comp = new ComplexNum(7,12);
         System.out.println(Comp);
+
+        ComplexNum C1 = new ComplexNum(3, 2);//Первый комплексный номер
+        C1.printComplexNumber();//Печать первого комплексного числа
+
+        ComplexNum C2 = new ComplexNum(9, 5);//Первый комплексный номер
+        C2.printComplexNumber();//Печать первого комплексного числа
+
+        ComplexNum С3 = new ComplexNum();//Сохранение суммы
+
+        ComplexNum C3 = С3.sub(C1, C2);
+        System.out.println("Summ of");//Выводим сумму
+        C3.printComplexNumber();
+
+        C3 = C3.sub(C1, C2);//
+        System.out.println("Difference of");//Выводим разницу
+        C3.printComplexNumber();
     }
 }
