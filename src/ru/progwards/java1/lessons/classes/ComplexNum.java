@@ -33,19 +33,13 @@ public class ComplexNum {
         System.out.println(Comp);
 
         ComplexNum C1 = new ComplexNum(3, 2);//Первый комплексный номер
-        C1.printComplexNumber();//Печать первого комплексного числа
-
         ComplexNum C2 = new ComplexNum(9, 5);//Первый комплексный номер
-        C2.printComplexNumber();//Печать первого комплексного числа
+        ComplexNum C3 = new ComplexNum();//Сохранение суммы
 
-        ComplexNum С3 = new ComplexNum();//Сохранение суммы
-
-        ComplexNum C3 = С3.add(C1, C2);
-        System.out.println("Summ of");//Выводим сумму
-        C3.printComplexNumber();
+        C3 = C3.add(C1, C2);
+        C3.printComplexNumber();//Выводим сумму
 
         C3 = C3.sub(C1, C2);//
-        System.out.println("Difference of");//Выводим разницу
-        C3.printComplexNumber();
+        C3.printComplexNumber();//Выводим разницу
     }
 }
