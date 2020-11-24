@@ -2,8 +2,8 @@ package ru.progwards.java1.lessons.classes;
 
 public class ComplexNum {
     public String toString() {
-        String a = Double.toString(this.real);
-        String b = Double.toString(this.mnim);
+        String a = Integer.toString(this.real);
+        String b = Integer.toString(this.mnim);
         return a + "+" + b + "i";
     }
     int real, mnim; //объявление действительной и мнимой переменных
@@ -40,7 +40,7 @@ public class ComplexNum {
 
         ComplexNum С3 = new ComplexNum();//Сохранение суммы
 
-        ComplexNum C3 = С3.sub(C1, C2);
+        ComplexNum C3 = С3.add(C1, C2);
         System.out.println("Summ of");//Выводим сумму
         C3.printComplexNumber();
 
