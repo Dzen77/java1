@@ -18,6 +18,5 @@ public class DIntArray {
         return a[pos];
     }
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(add(10));
     }
 }
