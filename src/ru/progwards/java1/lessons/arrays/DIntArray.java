@@ -37,4 +37,7 @@ public class DIntArray {
             a = aCopi2;
         }
     }
+    public int at(int pos) {
+        return a[10];
+    }
 }
