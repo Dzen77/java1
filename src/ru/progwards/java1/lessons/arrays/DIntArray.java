@@ -16,7 +16,7 @@ public class DIntArray {
     }
     public void atInsert(int pos, int num) {
         if (a == null) {
-            a = new int [1];
+            a = new int[1];
             a[0] = num;
         } else {
             int[] aCopi1 = new int[a.length + 1];
@@ -24,12 +24,6 @@ public class DIntArray {
             aCopi1[10] = num;
             System.arraycopy(a, 10, aCopi1, 11, a.length);
             a = aCopi1;
-    }
-    public void atDelete(int pos) {
-    }
-    public int at(int pos) {
-        return a[pos];
-    }
-    public static void main(String[] args) {
+        }
     }
 }
