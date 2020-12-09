@@ -47,8 +47,6 @@ public class DIntArray {
         return a[pos];
     }
     public static void main(String[] args) {
-        for (int i = 0; i < 6; i++) {
-            System.out.print(a[i]);
-        }
+        System.out.println(Arrays.toString(a));
     }
 }
