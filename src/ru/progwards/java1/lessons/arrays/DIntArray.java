@@ -22,13 +22,11 @@ public class DIntArray {
             a[0] = num;
         } else {
             int[] aCopi1 = new int[a.length + 1];
-            if (a[pos] >= 0 && a[pos] <= a.length) {
+            if (pos >= 0 && pos <= a.length) {
                 System.arraycopy(a, 0, aCopi1, 0, a[pos - 1]);
                 aCopi1[pos] = num;
-                if (a[pos] >= 0 && a[pos] <= a.length) {
-                    System.arraycopy(a, pos + 1, aCopi1, pos + 1, aCopi1.length);
-                    a = aCopi1;
-                }
+                System.arraycopy(a, pos + 1, aCopi1, pos + 1, aCopi1.length);
+                a = aCopi1;
             }
         }
     }
