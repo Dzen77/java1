@@ -3,7 +3,7 @@ package ru.progwards.java1.lessons.arrays;
 import java.util.Arrays;
 
 public class DIntArray {
-    int[] a;
+    static int[] a = {2, 4, -1, 5, 0, 7};
 
     public void add(int num) {
         if (a == null) {
@@ -24,8 +24,8 @@ public class DIntArray {
             int[] aCopi1 = new int[a.length + 1];
             if (pos >= 0 && pos <= a.length) {
                 System.arraycopy(a, 0, aCopi1, 0, a[pos - 1]);
-                aCopi1[pos] = num;
                 System.arraycopy(a, pos + 1, aCopi1, pos + 1, aCopi1.length);
+                aCopi1[pos] = num;
                 a = aCopi1;
             }
         }
@@ -38,12 +38,17 @@ public class DIntArray {
             int[] aCopi2 = new int[a.length - 1];
             if (a[pos] >= 0 && a[pos] <= a.length) {
                 System.arraycopy(a, 0, aCopi2, 0, a[pos - 1]);
-                System.arraycopy(a, pos + 1, aCopi2, pos + 1, a.length);
+                System.arraycopy(a, pos, aCopi2, pos, a.length);
                 a = aCopi2;
             }
         }
     }
     public int at(int pos) {
         return a[pos];
+    }
+    public static void main(String[] args) {
+        for (int i = 0; i < 6; i++) {
+            System.out.print(a[i] + ", ");
+        }
     }
 }
