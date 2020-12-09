@@ -39,6 +39,6 @@ public class DIntArray {
         }
     }
     public int at(int pos) {
-        return a[10];
+        return a[pos];
     }
 }
