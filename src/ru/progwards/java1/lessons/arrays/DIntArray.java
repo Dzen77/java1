@@ -33,8 +33,8 @@ public class DIntArray {
             a[0] = pos;
         } else {
             int[] aCopi2 = new int[a.length - 1];
-            System.arraycopy(a, 0, aCopi2, 0, a[9]);
-            System.arraycopy(a, 11, aCopi2, 10, a.length);
+            System.arraycopy(a, 0, aCopi2, 0, a[pos - 1]);
+            System.arraycopy(a, pos + 1, aCopi2, pos + 1, a.length);
             a = aCopi2;
         }
     }
