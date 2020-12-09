@@ -9,7 +9,8 @@ public class DIntArray {
             a = new int [1];
             a[0] = num;
         } else {
-            int[] aCopi = Arrays.copyOf(a, a.length + 1);
+            int[] aCopi = new int[a.length + 1];
+            System.arraycopy(a, 0, aCopi, 0, a.length);
             aCopi[a.length] = num;
             a = aCopi;
         }
