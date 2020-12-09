@@ -21,9 +21,9 @@ public class DIntArray {
             a[0] = num;
         } else {
             int[] aCopi1 = new int[a.length + 1];
-            System.arraycopy(a, 0, aCopi1, 0, a[9]);
-            aCopi1[10] = num;
-            System.arraycopy(a, 10, aCopi1, 11, a.length);
+            System.arraycopy(a, 0, aCopi1, 0, a[pos - 1]);
+            aCopi1[pos] = num;
+            System.arraycopy(a, pos + 1, aCopi1, pos + 1, aCopi1.length);
             a = aCopi1;
         }
     }
