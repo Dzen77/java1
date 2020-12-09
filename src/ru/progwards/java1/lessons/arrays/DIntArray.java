@@ -23,7 +23,7 @@ public class DIntArray {
             int[] aCopi1 = new int[a.length + 1];
             System.arraycopy(a, 0, aCopi1, 0, a[pos - 1]);
             aCopi1[pos] = num;
-            System.arraycopy(a, pos + 1, aCopi1, pos + 1, aCopi1.length);
+            System.arraycopy(a, pos, aCopi1, pos, aCopi1.length);
             a = aCopi1;
         }
     }
