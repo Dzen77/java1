@@ -26,4 +26,15 @@ public class DIntArray {
             a = aCopi1;
         }
     }
+    public void atDelete(int pos) {
+        if (a == null) {
+            a = new int[1];
+            a[0] = pos;
+        } else {
+            int[] aCopi2 = new int[a.length - 1];
+            System.arraycopy(a, 0, aCopi2, 0, a[9]);
+            System.arraycopy(a, 11, aCopi2, 10, a.length);
+            a = aCopi2;
+        }
+    }
 }
