@@ -15,6 +15,15 @@ public class DIntArray {
         }
     }
     public void atInsert(int pos, int num) {
+        if (a == null) {
+            a = new int [1];
+            a[0] = num;
+        } else {
+            int[] aCopi1 = new int[a.length + 1];
+            System.arraycopy(a, 0, aCopi1, 0, a[9]);
+            aCopi1[10] = num;
+            System.arraycopy(a, 10, aCopi1, 11, a.length);
+            a = aCopi1;
     }
     public void atDelete(int pos) {
     }
