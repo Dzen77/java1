@@ -13,12 +13,12 @@ public class Eratosthenes {
         }
     }
     public boolean isSimple(int n) {
-            return sieve[n];
+        return sieve[n];
     }
     public Eratosthenes(int n){
-            sieve = new boolean[n];//Инициализация массива
-            Arrays.fill(sieve, true);//Заполнение массива значениями
-            sift();
+        sieve = new boolean[n];//Инициализация массива
+        Arrays.fill(sieve, true);//Заполнение массива значениями
+        sift();
     }
     public static void main(String[] args) {
 

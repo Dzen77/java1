@@ -46,7 +46,7 @@ public class DIntArray {
             System.arraycopy(a, pos, temp1, 0, 1);
             a = temp1;
             return pos;
-        }
+    }
     public static void main(String[] args) {
         DIntArray d = new DIntArray();
         d.add(5);
