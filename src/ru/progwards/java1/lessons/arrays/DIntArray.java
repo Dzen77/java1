@@ -8,13 +8,13 @@ public class DIntArray {
     DIntArray() {
     }
     public void add(int num) {
-       if (a == null) {
-           a = new int[1];
+        if (a == null) {
+            a = new int[1];
             a[0] = num;
-       } else {
-           int[] aCopi = new int[a.length + 1];
-           System.arraycopy(a, 0, aCopi, 0, a.length);
-           aCopi[a.length] = num;
+        } else {
+            int[] aCopi = new int[a.length + 1];
+            System.arraycopy(a, 0, aCopi, 0, a.length);
+            aCopi[a.length] = num;
             a = aCopi;
         }
     }
@@ -42,12 +42,10 @@ public class DIntArray {
         a = temp1;
     }
     public int at(int pos) {
-        if (x1(pos) == false)
+        if (pos < 0 || pos >= a.length) {
             return 0;
-            int[] temp1 = new int[1];
-            System.arraycopy(a, pos, temp1, 0, 1);
-            a = temp1;
-            return pos;
+        } else {
+            return a[pos];        }
     }
     public static void main(String[] args) {
         DIntArray d = new DIntArray();
@@ -59,7 +57,7 @@ public class DIntArray {
         System.out.println("atInsert:  " + Arrays.toString(d.a));
         d.atDelete(1);
         System.out.println("atDelete  " + Arrays.toString(d.a));
-        d.at(2);
-        System.out.println("at  " + Arrays.toString(d.a));
+        int count = d.at(2);
+        System.out.println(count);
     }
 }
