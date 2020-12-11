@@ -42,6 +42,8 @@ public class DIntArray {
         a = temp1;
     }
     public int at(int pos) {
+        if (x1(pos) == false)
+            return 0;
             int[] temp1 = new int[1];
             System.arraycopy(a, pos, temp1, 0, 1);
             a = temp1;
@@ -55,9 +57,9 @@ public class DIntArray {
         System.out.println("add:  " + Arrays.toString(d.a));
         d.atInsert(2, 17);
         System.out.println("atInsert:  " + Arrays.toString(d.a));
-        d.atDelete(2);
+        d.atDelete(1);
         System.out.println("atDelete  " + Arrays.toString(d.a));
-        d.at(1);
+        d.at(2);
         System.out.println("at  " + Arrays.toString(d.a));
     }
 }
