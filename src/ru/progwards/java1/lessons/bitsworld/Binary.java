@@ -2,6 +2,7 @@ package ru.progwards.java1.lessons.bitsworld;
 
 public class Binary {
     byte aNum;
+    int len;
     public Binary(byte num) {
         aNum = num;
     }
@@ -13,7 +14,8 @@ public class Binary {
             aNum /= 2;
         }
         if (result.isEmpty())
-            return "0";
+            return "00000000";
+
         return result;
     }
     public static void main(String[] args) {
