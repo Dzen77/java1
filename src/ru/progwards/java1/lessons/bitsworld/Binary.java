@@ -6,25 +6,20 @@ public class Binary {
     public Binary(byte num) {
         aNum = num;
     }
-    public String toString() {
-        String result = "";
-        while (aNum > 0) {
-            int z = aNum % 2;
-            result = z + result;
-            aNum /= 2;
+    public String toString() {//Метод который возвращает двоичное представление числа типа byte
+        String result = "";//Переменная где накапливается результат работы цикла
+        for (int i = 0; i < 8; i++) {
+            result =  (((aNum & 1) == 0) ? "0" : "1") + result;
+            aNum = (byte)(aNum >> 1);
         }
-        if (result.isEmpty())
+        if (result.isEmpty())//Необходима если aNum на вхде в программу имеет значение <=0
             return "00000000";
-        len = result.length();
-        while (len <= 7) {
-            String x = "0";
-            result = x + result;
-            len++;
-            }
+
         return result;
     }
     public static void main(String[] args) {
-        Binary bin = new Binary((byte) 0);
+        byte y = (byte)-12;
+        Binary bin = new Binary(y);
         System.out.println(bin);
     }
 }
