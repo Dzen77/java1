@@ -15,11 +15,16 @@ public class Binary {
         }
         if (result.isEmpty())
             return "00000000";
-
+        len = result.length();
+        while (len <= 7) {
+            String x = "0";
+            result = x + result;
+            len++;
+            }
         return result;
     }
     public static void main(String[] args) {
-        Binary bin = new Binary((byte) 27);
+        Binary bin = new Binary((byte) 0);
         System.out.println(bin);
     }
 }
